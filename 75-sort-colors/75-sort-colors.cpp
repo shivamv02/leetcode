@@ -11,7 +11,7 @@ public:
             else
                 b++;
         }
-        cout<<r<<w<<b;
+     
         for(int i=0;i<nums.size();i++)
         {
             if(r)
