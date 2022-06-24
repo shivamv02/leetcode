@@ -17,7 +17,7 @@ public:
         prev=0;
         curr=head;
         nxt=head;
-        while(nxt!=NULL)
+        while(nxt)
         {
              nxt=nxt->next;
             curr->next=prev;
