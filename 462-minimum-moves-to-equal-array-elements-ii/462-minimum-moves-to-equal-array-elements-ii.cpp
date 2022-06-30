@@ -10,7 +10,7 @@ public:
                 s+=abs(y-x)%1000000007;
             v.push_back(s);
         }
-        sort(v.begin(),v.end());
-        return v[0];
+     
+        return *min_element(v.begin(),v.end());
     }
 };
