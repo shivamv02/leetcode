@@ -13,7 +13,7 @@ public:
     TreeNode* ans;
     void inorder(TreeNode* original, TreeNode* cloned, TreeNode* target)
     {
-         if(original&&cloned)
+         if(original)
          {
              if(original==target){
                 ans = cloned ;
@@ -23,6 +23,7 @@ public:
       getTargetCopy(original->left,cloned->left,target);
         getTargetCopy(original->right,cloned->right,target);
          }
+        return;
         
     }
     TreeNode* getTargetCopy(TreeNode* original, TreeNode* cloned, TreeNode* target) {
