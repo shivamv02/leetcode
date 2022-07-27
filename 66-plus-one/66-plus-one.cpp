@@ -13,8 +13,11 @@ public:
             }
         }
        if(digits[0]==0)
-           digits.push_back(1);
-        reverse(digits.begin(),digits.end());
+       {
+           digits[0]=1;
+           digits.push_back(0);
+       }
+        
         return digits;
     }
 };
