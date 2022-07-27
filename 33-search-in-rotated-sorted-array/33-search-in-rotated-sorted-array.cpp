@@ -14,12 +14,12 @@ public:
                 h=mid;
         }
         
-        int rm=l;
+        int rotate=l;
         l=0,h=nums.size()-1;
         while(l<=h)
         {
             int mid=l+(h-l)/2;
-              int realmid=(mid+rm)%nums.size();
+              int realmid=(mid+rotate)%nums.size();
             if(nums[realmid]==target)
                 return realmid;
             else if(nums[realmid]>target)
