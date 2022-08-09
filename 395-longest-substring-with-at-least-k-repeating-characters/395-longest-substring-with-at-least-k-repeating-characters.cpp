@@ -8,7 +8,7 @@ public:
         for(char x:s)mp[x]++;
         int l=0,ls=0;
         while(l<n and mp[s[l]]>=k)l++;
-        if(l>=n-1) return l;
+        if(l==n) return l;
         ls=longestSubstring(s.substr(0,l),k);
         while(l<n and mp[s[l]]<k)l++;
         int rs=l<n?longestSubstring(s.substr(l),k):0;
