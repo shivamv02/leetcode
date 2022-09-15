@@ -6,7 +6,6 @@ public:
             if(nums[i-1]>=nums[i])
             {   if(i-1==0)
                 reverse(nums.begin(),nums.end());
-                continue;
             }
             else
             {
