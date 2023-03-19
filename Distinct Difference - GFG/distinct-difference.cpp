@@ -38,7 +38,6 @@ class Solution {
         unordered_set<int> s;
         for(int i=0;i<N-1;i++)
         {
-            if(s.find(A[i])==s.end())
             s.insert(A[i]);
             l.push_back(s.size());
             
@@ -48,7 +47,6 @@ class Solution {
         reverse(A.begin(),A.end());
         for(int i=0;i<N-1;i++)
         {
-            if(s.find(A[i])==s.end())
             s.insert(A[i]);
             r.push_back(s.size());
             
